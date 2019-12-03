@@ -243,7 +243,7 @@ class MongoCompanyRegistration {
 //interface MongoCompanyRepository : MongoRepository<MongoCompany, UUID>
 
 // Currently this gateway is not marked as primary therefore not injected
-// Need to setup a dockerfile with instructions to setup mongo
+// TODO Need to setup a dockerfile with instructions to setup mongo
 //@Primary
 @Named
 //class MongoCompanyGateway(private val companyRepository: MongoCompanyRepository): CompanyGateway {
