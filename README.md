@@ -10,6 +10,7 @@ This codebase utilizes injection, to easily swap the persistence gateway. Thus, 
 
 - [Java 8][1]
 
+_Note: this application comes with the [Gradle Wrapper][3], therefore one does not need to install Gradle_
 ## Setup, build and run
 
 - Make sure prerequisites are met, then clone the repo:
@@ -122,4 +123,5 @@ HTTP 201 CREATED
 [0]: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 [1]: https://openjdk.java.net
 [2]:/documentation/clean_architecture_slides.pdf
+[3]: https://docs.gradle.org/current/userguide/gradle_wrapper.html
 [4]: https://github.com/srmds/clean-architecture-spring-kotlin/blob/master/src/main/kotlin/com/screaming/architecture/MainDriver.kt#L247
