@@ -1,8 +1,9 @@
 # Clean Architecture - Spring - Kotlin  
 
-This is a simple Spring application demonstrating how to implement [Clean Architecture (Uncle Bob)][0]
-
+This is a simple hands-on Spring application demonstrating how to implement [Clean Architecture (Uncle Bob)][0]
 You can find the accompanying slides, [here][2]
+
+This codebase utilizes injection, to easily swap the persistence gateway. Thus, by only swapping (injecting) another Gateway, one can go from in-memory persistence to a persistent storage, in this example: Mongo, see [here][https://github.com/srmds/clean-architecture-spring-kotlin/blob/master/src/main/kotlin/com/screaming/architecture/MainDriver.kt#L247], without changing anything else (domain models / logic ect. This accounts for the notion that a database is an _implementation detail._
 
 ## Prerequisites
 
@@ -57,6 +58,7 @@ Register new Companies to an online platform.
 ***When I*** register the new arrived company with platform API
 ***Then I should*** have a verification that the registration has succedeed and
 ***And overall*** the new company is listed in the overview of 
+
 
 ## API Endpoints
 
