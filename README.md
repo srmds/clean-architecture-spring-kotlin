@@ -55,10 +55,13 @@ Register new Companies to an online platform.
 
 ### Scenario
  
-***Given that*** the company has approved to be listed on the public online platform
-***When I*** register the new arrived company with platform API
-***Then I should*** have a verification that the registration has succedeed and
-***And overall*** the new company is listed in the overview of 
+- ***Given that*** the company has approved to be listed on the public online platform
+
+- ***When I*** register the new arrived company with platform API
+
+- ***Then I should*** have a verification that the registration has succedeed and
+
+- ***And overall*** the new company is listed in the overview of 
 
 
 ## API Endpoints
