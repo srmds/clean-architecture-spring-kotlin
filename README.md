@@ -3,7 +3,7 @@
 This is a simple hands-on Spring application demonstrating how to implement [Clean Architecture (Uncle Bob)][0]
 You can find the accompanying slides, [here][2]
 
-This codebase utilizes injection, to easily swap the persistence gateway. Thus, by only swapping (injecting) another Gateway, one can go from in-memory persistence to a persistent storage, in this example: Mongo, see [here][https://github.com/srmds/clean-architecture-spring-kotlin/blob/master/src/main/kotlin/com/screaming/architecture/MainDriver.kt#L247], without changing anything else (domain models / logic ect. This accounts for the notion that a database is an _implementation detail._
+This codebase utilizes injection, to easily swap the persistence gateway. Thus, by only swapping (injecting) another Gateway, one can go from in-memory persistence to a persistent storage, in this example: Mongo, see [here][4], without changing anything else (domain models / logic ect. This accounts for the notion that a database is an _implementation detail._
 
 ## Prerequisites
 
@@ -118,3 +118,4 @@ HTTP 201 CREATED
 [0]: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 [1]: https://openjdk.java.net
 [2]:/documentation/clean_architecture_slides.pdf
+[4]: https://github.com/srmds/clean-architecture-spring-kotlin/blob/master/src/main/kotlin/com/screaming/architecture/MainDriver.kt#L247
