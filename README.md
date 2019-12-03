@@ -1,9 +1,10 @@
 # Clean Architecture - Spring - Kotlin  
 
-This is a simple hands-on Spring application demonstrating how to implement [Clean Architecture (Uncle Bob)][0]
-You can find the accompanying slides, [here][2]
+This is a simple hands-on Spring application demonstrating how to implement [Clean Architecture (Uncle Bob)][0].
 
-This codebase utilizes injection, to easily swap the persistence gateway. Thus, by only swapping (injecting) another Gateway, one can go from in-memory persistence to a persistent storage, in this example: Mongo, see [here][4], without changing anything else (domain models / logic ect. This accounts for the notion that a database is an _implementation detail._
+You can find the accompanying slides, [here][2].
+
+This codebase utilizes injection, to easily swap the persistence gateway. Thus, by only swapping (injecting) another Gateway, one can go from _in-memory_ persistence to a _persistent_ storage (i.e. Mongo), see [here][4], without changing anything else (domain models / logic ect). This accounts for the notion that a database is an _implementation detail._
 
 ## Prerequisites
 
