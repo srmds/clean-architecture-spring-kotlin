@@ -110,7 +110,7 @@ HTTP 201 CREATED
     "name": "CompanyName",
     "website": "https://example.com",
     "missionStatement": "Lorum ipsum dolor...",
-    "logo": "https://via.placeholder.com/50x50.png"
+    "logo": "https://via.placeholder.com/50x50.png",
     "registration": {
         "status": "ACCEPTED",
         "date": "2019-12-03 22:46:58"
