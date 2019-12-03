@@ -1,0 +1,51 @@
+buildscript {
+    ext.kotlin_version = '1.3.60' // Required for Kotlin integration
+	ext.spring_boot_version = '2.1.0.RELEASE'
+    repositories {
+        jcenter()
+    }
+    dependencies {
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"// Required for Kotlin integration
+        classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"// See https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$spring_boot_version"
+    }
+}
+
+apply plugin: 'kotlin'// Required for Kotlin integration
+apply plugin: "kotlin-spring"// https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    // Required for Kotlin integration
+
+    //Spring boot - MVC
+    compile("org.springframework.boot:spring-boot-starter-web") {
+        exclude module: "spring-boot-starter-tomcat"
+        // Remove tomcat webserver
+    }
+
+    // Spring boot - Provision with jetty webserver instead of tomcat, because jetty is more lightweight
+    compile("org.springframework.boot:spring-boot-starter-jetty")
+
+    //Spring boot - dev tools - allows hotswapping
+    compile("org.springframework.boot:spring-boot-devtools")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+
+    //Spring boot - Provision with MongoDB client
+//    compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+
+    //Inject - JSR 330 annotations
+    compile 'javax.inject:javax.inject:1'
+
+    //Spring boot - tests
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
