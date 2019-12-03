@@ -15,7 +15,7 @@ This codebase utilizes injection, to easily swap the persistence gateway. Thus, 
 - Make sure prerequisites are met, then clone the repo:
 
 ```shell
-$ git clone 
+$ git clone git@github.com:srmds/clean-architecture-spring-kotlin.git
 ```
 
 - Navigate to root of project, then:
