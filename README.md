@@ -107,10 +107,10 @@ HTTP 201 CREATED
 ```json
 {
     "id": "eb4cce9f-2055-444c-8a21-107c9c0cb410",
-    "name": null,
-    "link": null,
-    "missionStatement": null,
-    "logo": null,
+    "name": "CompanyName",
+    "website": "https://example.com",
+    "missionStatement": "Lorum ipsum dolor...",
+    "logo": "https://via.placeholder.com/50x50.png"
     "registration": {
         "status": "ACCEPTED",
         "date": "2019-12-03 22:46:58"
