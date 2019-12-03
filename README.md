@@ -36,6 +36,8 @@ $ ./gradlew bootRun
 
 ### Seperation of concerns
 
+Here you will find how the different layers have each own responsibilty, and which corresponding class is represented in each layer.
+
 ![](/documentation/clean_architecture_layers.png)
 
 ![](/documentation/class_diagram.png)
