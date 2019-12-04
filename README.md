@@ -126,6 +126,14 @@ HTTP 201 CREATED
 }
 ```
 
+## Resources
+
+- [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- [Custom Editor region folding](https://blog.jetbrains.com/idea/2012/03/custom-code-folding-regions-in-intellij-idea-111/)
+- [SOLID principles](https://en.wikipedia.org/wiki/SOLID)
+- [Gradle & Kotlin](https://gradle.org/kotlin/)
+- [MongoDB](https://mongodb.github.io/mongo-java-driver/)
+
 [0]: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 [1]: https://openjdk.java.net
 [2]:/documentation/clean_architecture_slides.pdf
