@@ -6,9 +6,16 @@ You can find the accompanying slides, [here][2].
 
 This codebase utilizes injection, to easily swap the persistence gateway. Thus, by only swapping (injecting) another Gateway, one can go from _in-memory_ persistence to a _persistent_ storage (i.e. Mongo), see [here][4], without changing anything else (domain models / logic ect). This accounts for the notion that a database is an _implementation detail._
 
+### TODO's / Work In Progress (WIP)
+
+- Setup Dockerfile to host container with Mongo, [enable Injecting Mongo Gateway]()
+- Uncomment [Spring Mongo Webstarter dependency][6] and [Mongo Gateway][7] to enable swapping In-memory storage with Persistent Storage. 
+
+
 ## Prerequisites
 
 - [Java 8][1]
+- [Docker][5]
 
 _Note: this application comes with the [Gradle Wrapper][3], therefore one does not need to install Gradle_
 ## Setup, build and run
@@ -118,12 +125,11 @@ HTTP 201 CREATED
 }
 ```
 
-### TODO
-
-- Setup dockerfile to host Mongo, [enable Injecting Mongo Gateway]()
-
 [0]: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 [1]: https://openjdk.java.net
 [2]:/documentation/clean_architecture_slides.pdf
 [3]: https://docs.gradle.org/current/userguide/gradle_wrapper.html
 [4]: https://github.com/srmds/clean-architecture-spring-kotlin/blob/master/src/main/kotlin/com/screaming/architecture/MainDriver.kt#L247
+[5]: https://docs.docker.com/install/
+[6]: https://github.com/srmds/clean-architecture-spring-kotlin/blob/master/build.gradle#L45 
+[7]: https://github.com/srmds/clean-architecture-spring-kotlin/blob/master/src/main/kotlin/com/screaming/architecture/MainDriver.kt#L249
