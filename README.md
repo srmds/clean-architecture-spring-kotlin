@@ -8,7 +8,7 @@ This codebase utilizes injection, to easily swap the persistence gateway. Thus, 
 
 ### TODO's / Work In Progress (WIP)
 
-- Setup Dockerfile to host container with Mongo, [enable Injecting Mongo Gateway]()
+- Setup Dockerfile to host container with Mongo, [enable Injecting Mongo Gateway][7]
 - Uncomment [Spring Mongo Webstarter dependency][6] and [Mongo Gateway][7] to enable swapping In-memory storage with Persistent Storage. 
 
 
@@ -18,6 +18,7 @@ This codebase utilizes injection, to easily swap the persistence gateway. Thus, 
 - [Docker][5]
 
 _Note: this application comes with the [Gradle Wrapper][3], therefore one does not need to install Gradle_
+
 ## Setup, build and run
 
 - Make sure prerequisites are met, then clone the repo:
@@ -30,13 +31,13 @@ $ git clone git@github.com:srmds/clean-architecture-spring-kotlin.git
 
 #### Build the application
 ```shell
-$ ./gradlew clean build
+$ ./gradlew clean build --stacktrace
 ```
 
 #### Run the application
 
 ```
-$ ./gradlew bootRun
+$ ./gradlew bootRun --stacktrace
 ```
 
 ## Clean Architecture
@@ -51,17 +52,17 @@ Here you will find how the different layers have each own responsibilty, and whi
 
 ## Use case
 
-### Story
+### User Story
 
 Register new Companies to an online platform.
 
 ***In order to*** register a new company
 ***As a*** site admin
-***I need to*** be able to register new Companies 
+***I need to*** be able to register new companies 
 
-### Rules
+### Requirements
 
-- company must have a name
+- A company must have a name
 
 ### Scenario
  

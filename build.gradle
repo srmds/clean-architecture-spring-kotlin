@@ -1,19 +1,23 @@
 buildscript {
-    ext.kotlin_version = '1.3.60' // Required for Kotlin integration
+    // Required for Kotlin integration
+    ext.kotlin_version = '1.3.60'
 	ext.spring_boot_version = '2.1.0.RELEASE'
     repositories {
         jcenter()
     }
     dependencies {
-
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"// Required for Kotlin integration
-        classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"// See https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support
+        // Required for Kotlin integration
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
+        // See https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support
         classpath "org.springframework.boot:spring-boot-gradle-plugin:$spring_boot_version"
     }
 }
 
-apply plugin: 'kotlin'// Required for Kotlin integration
-apply plugin: "kotlin-spring"// https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support
+// Required for Kotlin integration
+apply plugin: 'kotlin'
+// https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support
+apply plugin: "kotlin-spring"
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
@@ -24,8 +28,8 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     // Required for Kotlin integration
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     //Spring boot - MVC
     compile("org.springframework.boot:spring-boot-starter-web") {
